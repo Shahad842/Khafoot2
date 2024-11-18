@@ -9,13 +9,11 @@ import SwiftUI
 
 struct CategoryView: View {
     @EnvironmentObject var viewModel: SoundViewModel
-
     let category: String
     let sounds: [SoundModel]
-
     @State private var selectedSound: SoundModel?
     @State private var expandSheet = false
-    @State private var dragOffset: CGFloat = 0 // Track drag offset
+    @State private var dragOffset: CGFloat = 0
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -24,28 +22,30 @@ struct CategoryView: View {
                 .fontWeight(.bold)
                 .padding(.horizontal)
                 .padding(.top)
+                .accessibilityAddTraits(.isHeader)
+                .accessibilityLabel("\(category) sounds category")
             
             ScrollView {
                 VStack(spacing: 16) {
                     ForEach(sounds) { sound in
-                        // Card View for each sound
                         HStack(spacing: 15) {
-                            // Sound image
                             Image(sound.soundImage)
                                 .resizable()
                                 .frame(width: 110, height: 110)
                                 .clipShape(RoundedRectangle(cornerRadius: 12))
-                            //                                .shadow(radius: 2)
+                                .accessibilityLabel("Sound image for \(sound.title)")
                             
                             VStack(alignment: .leading, spacing: 8) {
                                 Text(viewModel.formatDate(sound.date))
                                     .font(.system(size: 15))
                                     .foregroundColor(Color("SecondaryTextColor"))
+                                    .accessibilityLabel("Date: \(viewModel.formatDate(sound.date))")
                                 
                                 Text(sound.title)
                                     .font(.system(size: 18))
                                     .bold()
                                     .foregroundColor(Color("TextColor"))
+                                    .accessibilityLabel("Title: \(sound.title)")
                                 
                                 Spacer()
                                 
@@ -54,45 +54,48 @@ struct CategoryView: View {
                                         Text(viewModel.timeString(time: viewModel.currentTime))
                                             .font(.subheadline)
                                             .foregroundColor(Color("PlayIconColor"))
+                                            .accessibilityLabel("Current time: \(viewModel.timeString(time: viewModel.currentTime))")
                                         
                                         Track()
+                                            .accessibilityLabel("Audio progress track")
                                        
                                     } else {
-                                        
                                         Text(viewModel.formatDuration(time: sound.duration))
                                             .font(.subheadline)
                                             .foregroundColor(Color("PlayIconColor"))
+                                            .accessibilityLabel("Duration: \(viewModel.formatDuration(time: sound.duration))")
                                         
                                         RoundedRectangle(cornerRadius: 5)
                                             .fill(Color("PlayIconColor").opacity(0.5))
                                             .frame(height: 6)
                                             .frame(maxWidth: .infinity)
+                                            .accessibilityHidden(true)
                                     }
-                                                                        
-//                                    Button(action: {
-//                                        // Pause the sound if it is currently playing
-//                                        viewModel.togglePlayPause()
-//                                        
-//                                    }) {
+                                    
                                         if viewModel.isPlaying, viewModel.currentSound == sound {
-                                            // Change the icon based on play/pause state
                                             Image(systemName: "pause.fill")
                                                 .foregroundColor(Color("PlayIconColor"))
                                                 .padding(8)
+                                                .accessibilityLabel("Pause \(sound.title)")
+                                                .accessibilityAddTraits(.isButton)
                                         } else {
                                             Image(systemName: "play.fill")
                                                 .foregroundColor(Color("PlayIconColor"))
                                                 .padding(8)
+                                                .accessibilityLabel("Play \(sound.title)")
+                                                .accessibilityAddTraits(.isButton)
                                         }
-//                                    }
                                 }
                                 .padding(.horizontal, 12)
                                 .background(
                                     RoundedRectangle(cornerRadius: 30)
                                         .fill(Color("Neutral40"))
-                                    //                                        .shadow(color: .gray.opacity(0.3), radius: 4, x: 0, y: 2)
                                 )
                                 .frame(maxWidth: .infinity)
+                                .accessibilityElement(children: .combine)
+                                .accessibilityLabel(viewModel.isPlaying && viewModel.currentSound == sound ?
+                                    "Playing \(sound.title), \(viewModel.timeString(time: viewModel.currentTime))" :
+                                    "Duration \(viewModel.formatDuration(time: sound.duration))")
                             }
                         }
                         .onTapGesture {
@@ -105,8 +108,12 @@ struct CategoryView: View {
                         .background(
                             RoundedRectangle(cornerRadius: 15)
                                 .fill(Color("SplashColor"))
-                            //                                .shadow(color: .gray.opacity(0.3), radius: 5, x: 0, y: 3)
                         )
+                        .accessibilityElement(children: .combine)
+                        .accessibilityLabel("\(sound.title) sound")
+                        .accessibilityHint("Double tap to play full screen")
+                        .accessibilityValue(viewModel.isPlaying && viewModel.currentSound == sound ? "Currently playing" : "Not playing")
+                        .accessibilityAddTraits(.isButton)
                     }
                 }
             }
@@ -116,8 +123,9 @@ struct CategoryView: View {
                 SoundView(expandSheet: $expandSheet)
             }
         }
-        
-        // Mini view
+    }
+}
+// Mini view
 //        .overlay(
 //            VStack {
 //                Spacer()
@@ -146,5 +154,5 @@ struct CategoryView: View {
 //                }
 //            }
 //        )
-    }
-}
+//    }
+//}

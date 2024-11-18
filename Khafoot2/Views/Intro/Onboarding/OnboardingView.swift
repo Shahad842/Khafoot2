@@ -8,12 +8,9 @@
 import SwiftUI
 
 struct OnboardingView: View {
-    
     @Binding var isOnboardingCompleted: Bool
     @Binding var navigateToSoundCheck: Bool
-    
     @State private var isLoading = false
-//    @State private var showPermissionDeniedAlert = false
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -21,21 +18,46 @@ struct OnboardingView: View {
                 Text("Welcome to")
                     .font(.system(size: 48, weight: .semibold))
                     .foregroundColor(Color("TextColor"))
+                    .accessibilityAddTraits(.isHeader)
                 
                 Text("Khafoot")
                     .font(.system(size: 48, weight: .semibold))
                     .foregroundColor(Color("AccentColor"))
+                    .accessibilityAddTraits(.isHeader)
             }
+            .accessibilityElement(children: .combine)
+            .accessibilityLabel("Welcome to Khafoot")
             .padding(.leading, 40)
             .padding(.bottom, 50)
             .padding(.top, 80)
             
             VStack(alignment: .leading, spacing: 20) {
-                FeatureView(imageName: "waveform.and.magnifyingglass", title: "Noise Detection", description: "The app uses advanced technology to monitor\n ambient noise levels, ensuring a relaxing,\n distraction-free experience.", imageWidth: 52.86, imageHeight: 46.77)
+                FeatureView(imageName: "waveform.and.magnifyingglass",
+                           title: "Noise Detection",
+                           description: "The app uses advanced technology to monitor\n ambient noise levels, ensuring a relaxing,\n distraction-free experience.",
+                           imageWidth: 52.86,
+                           imageHeight: 46.77)
+                    .accessibilityElement(children: .combine)
+                    .accessibilityLabel("Feature: Noise Detection")
+                    .accessibilityHint("The app uses advanced technology to monitor ambient noise levels, ensuring a relaxing, distraction-free experience.")
                 
-                FeatureView(imageName: "ear.and.waveform", title: "Personalized Meditation", description: "Meditation in the app includes listening to \n nature sounds, which helps promote relaxation \n and calm.", imageWidth: 48, imageHeight: 62.42)
+                FeatureView(imageName: "ear.and.waveform",
+                           title: "Personalized Meditation",
+                           description: "Meditation in the app includes listening to \n nature sounds, which helps promote relaxation \n and calm.",
+                           imageWidth: 48,
+                           imageHeight: 62.42)
+                    .accessibilityElement(children: .combine)
+                    .accessibilityLabel("Feature: Personalized Meditation")
+                    .accessibilityHint("Meditation in the app includes listening to nature sounds, which helps promote relaxation and calm.")
                 
-                FeatureView(imageName: "brain.head.profile", title: "Embrace Slow Living", description: "In the app, embracing the Slow Lifestyle \n encourages you to focus on the present moment, and reduce clutter.", imageWidth: 49, imageHeight: 59)
+                FeatureView(imageName: "brain.head.profile",
+                           title: "Embrace Slow Living",
+                           description: "In the app, embracing the Slow Lifestyle \n encourages you to focus on the present moment, and reduce clutter.",
+                           imageWidth: 49,
+                           imageHeight: 59)
+                    .accessibilityElement(children: .combine)
+                    .accessibilityLabel("Feature: Embrace Slow Living")
+                    .accessibilityHint("In the app, embracing the Slow Lifestyle encourages you to focus on the present moment, and reduce clutter.")
             }
             .padding(.top, 20)
             
@@ -47,6 +69,7 @@ struct OnboardingView: View {
                         .scaledToFit()
                         .frame(width: 29.46, height: 22.28)
                         .foregroundColor(Color("AccentColor"))
+                        .accessibilityHidden(true) // Hide decorative image from VoiceOver
                     
                     Spacer()
                 }
@@ -56,6 +79,8 @@ struct OnboardingView: View {
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color("Neutral40"))
                     .fixedSize(horizontal: false, vertical: true)
+                    .accessibilityLabel("Privacy Information")
+                    .accessibilityHint("Khafoot collects your activity to improve and personalize the app. This is not associated with your Apple ID, which may be used to check for news subscriptions.")
             }
             .padding(.top, 50)
             
@@ -67,7 +92,6 @@ struct OnboardingView: View {
                         navigateToSoundCheck = granted
                         UserDefaults.standard.set(true, forKey: "OnboardingCompleted")
                         isOnboardingCompleted = true
-//                        showPermissionDeniedAlert = !granted
                     }
                 }
             }) {
@@ -81,18 +105,9 @@ struct OnboardingView: View {
                     .padding(.bottom, 20)
                     .frame(maxWidth: .infinity)
             }
-//            .alert(isPresented: $showPermissionDeniedAlert) {
-//                Alert(title: Text("Permission Denied"),
-//                      message: Text("Please enable microphone access in Settings to use this feature."),
-//                      dismissButton: .default(Text("OK")))
-//            }
-            .padding(.bottom, 50)
-        }
-        .opacity(isLoading ? 1 : 0)
-        .onAppear {
-            withAnimation(.easeIn(duration: 1.5)) {
-                isLoading = true
-            }
+            .accessibilityLabel("Continue to app")
+            .accessibilityHint("Completes onboarding and requests notification permission")
+            .accessibilityAddTraits(.isButton)
         }
     }
 }

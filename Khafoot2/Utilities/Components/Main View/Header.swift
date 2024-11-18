@@ -15,6 +15,10 @@ struct Header: View {
                 .fontWeight(.bold)
                 .foregroundColor(Color("TextColor"))
                 .padding()
+                // Mark as header for VoiceOver
+                .accessibilityAddTraits(.isHeader)
+                // Provide clear label
+                .accessibilityLabel("Listen Now main heading")
             
             Spacer()
             
@@ -24,8 +28,15 @@ struct Header: View {
                     .foregroundColor(Color("AccentColor"))
                     .padding()
                     .navigationBarHidden(true)
-
+                    // Make settings button more accessible
+                    .accessibilityLabel("Settings")
+                    .accessibilityHint("Open app settings")
+                    // Add button trait
+                    .accessibilityAddTraits(.isButton)
             }
         }
+        // Optional: Combine header elements for streamlined VoiceOver navigation
+        // .accessibilityElement(children: .combine)
+        // .accessibilityLabel("Listen Now screen with settings")
     }
 }
