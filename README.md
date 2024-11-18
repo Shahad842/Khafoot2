@@ -1,7 +1,4 @@
-
 # Project Name: Khafoot
-
-
 Application that helps employees embracing a slow living lifestyle,The application 
 will analyze sound levels using AVFoundition and CoreML to detect high-stress environments and notify the user.
 
@@ -12,15 +9,9 @@ will analyze sound levels using AVFoundition and CoreML to detect high-stress en
 
 
 # Features ✨
-
-* Sound Level Monitoring :
-Continuously monitors ambient sound levels using AVFoundation to assess the environment's noise.
-* Stress Detection :
-Utilizes CoreML to analyze sound patterns and classify environments as low, moderate, or high stress based on predefined thresholds.
+* Sound Classification : using AVFoundition and CoreML to detect high-stress environments and notify the user.
 * Real-Time Notifications :
 Sends alerts to users when they enter a high-stress environment, encouraging them to take breaks or move to quieter spaces.
-* Customizable Settings :
-Allows users to set their own thresholds for sound levels and stress detection, tailoring notifications to their personal sensitivity.
 * User-Friendly Interface :
 Designed with an intuitive layout, making it easy for users to navigate and access features quickly.
 
@@ -29,7 +20,6 @@ Designed with an intuitive layout, making it easy for users to navigate and acce
 * Xcode 16.0+
 
 # Installation 📲
-
 * Clone the repository:
 - git clone https://github.com/Shahad842/Khafoot2.git
 
@@ -67,7 +57,6 @@ Build and run the project (⌘ + R)
 
 
 # Teammembers 👥
-
 * Shahad Alhothali - Project Manager
 * Renad Alfurayhi - iOS Developer 
 * Shatha Alqhtani - iOS Developer 
@@ -75,9 +64,9 @@ Build and run the project (⌘ + R)
 * Bana Alshabib - UX/UI Designer 
 
 # Contact 📞
-* Project Email: khafoot.info@gmail.com
+* Email: khafoot.info@gmail.com
 * X:https://x.com/khafoot29424
 
 
 # App Store 
-
+https://apps.apple.com/sa/app/khafoot/id6737882045
