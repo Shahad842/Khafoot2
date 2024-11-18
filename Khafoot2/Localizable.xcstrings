@@ -1,0 +1,335 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Access to sound" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "خفوت يريد الوصول إلى الميكروفون"
+          }
+        }
+      }
+    },
+    "Activate notifications" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "خفوت يرغب في إرسال إشعارات"
+          }
+        }
+      }
+    },
+    "Continue" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "استمرار"
+          }
+        }
+      }
+    },
+    "Enable Notifications" : {
+
+    },
+    "Enable Sound" : {
+
+    },
+    "Hello, world!" : {
+
+    },
+    "If there is a problem, you can contact us via email to solve it" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إذا واجهتك مشكلة يمكنك التواصل معنا عبر البريد الإلكتروني لحلها"
+          }
+        }
+      }
+    },
+    "If there is a problem, you can contact us via email to solve it." : {
+
+    },
+    "Khafoot" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "خَفوت"
+          }
+        }
+      }
+    },
+    "Khafoot collects your activity, which is not \nassociated with your Apple ID, in order to \nimprove and personalize Khafoot. Your\n Apple ID may be used to check for news \n subscriptions." : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يقوم تطبيق خَفوت بجمع نشاطاتك، والذي لا يرتبط بمعرف حساب Apple الخاص فيك ، وذلك بهدف تحسين تطبيق خَفوت وتخصيصه. ويمكن استخدام معرّف Apple الخاص بك للتحقق من الاخبار والاشتراكات."
+          }
+        }
+      }
+    },
+    "Liked Sounds" : {
+
+    },
+    "Listen Now" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إستمع الآن"
+          }
+        }
+      }
+    },
+    "Nature" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الطبيعة"
+          }
+        }
+      }
+    },
+    "No sound selected" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لم يتم تحديد أي صوت"
+          }
+        }
+      }
+    },
+    "Notifications" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الإشعارات"
+          }
+        }
+      }
+    },
+    "Problem" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مشكلة"
+          }
+        }
+      }
+    },
+    "Rain " : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "المطر"
+          }
+        }
+      }
+    },
+    "Relaxing %@ Sounds" : {
+
+    },
+    "Report a Problem" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إبلاغ عن مشكلة "
+          }
+        }
+      }
+    },
+    "Report problem" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إبلاغ عن مشكلة "
+          }
+        }
+      }
+    },
+    "Report Problem" : {
+
+    },
+    "RESUME" : {
+
+    },
+    "Setting" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الإعدادات"
+          }
+        }
+      }
+    },
+    "Settings" : {
+
+    },
+    "Share" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مشاركة "
+          }
+        }
+      }
+    },
+    "Sound" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "صوت"
+          }
+        }
+      }
+    },
+    "Stillness for inner peace" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لحظات من السكون لسلامك الداخلي "
+          }
+        }
+      }
+    },
+    "Upon activation, you will receive notifications and everything new" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عند التفعيل سوف تصلك الاشعارات وكل ما هو جديد"
+          }
+        }
+      }
+    },
+    "Upon activation, you will receive notifications and everything new." : {
+
+    },
+    "Water" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الماء"
+          }
+        }
+      }
+    },
+    "Welcome to" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مرحبا بكم في "
+          }
+        }
+      }
+    },
+    "When you allow, the sounds around you will be accessible" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عندما تسمح بذلك، سيتم الوصول للأصوات من حولك. "
+          }
+        }
+      }
+    },
+    "When you allow, the sounds around you will be accessible." : {
+
+    },
+    "إذا كانت هناك مشكلة، يمكنك التواصل معنا لحلها." : {
+
+    },
+    "إيقاف الصوت" : {
+
+    },
+    "اضغط لتبديل حالة الصوت بين التشغيل والإيقاف" : {
+
+    },
+    "اضغط لتقديم الصوت للأمام بمقدار 15 ثانية" : {
+
+    },
+    "اضغط للإبلاغ عن مشكلة عبر البريد الإلكتروني." : {
+
+    },
+    "الإبلاغ عن مشكلة" : {
+
+    },
+    "الوقت الحالي: %@" : {
+
+    },
+    "تاريخ الصوت: %@" : {
+
+    },
+    "تشغيل الصوت" : {
+
+    },
+    "تفعيل الإشعارات" : {
+
+    },
+    "تفعيل الصوت" : {
+
+    },
+    "تقديم الصوت 15 ثانية للأمام" : {
+
+    },
+    "سوف تتلقى إشعارات عند تفعيل الخيار" : {
+
+    },
+    "صورة الصوت %@" : {
+
+    },
+    "عند التفعيل، ستتلقى الإشعارات وكل شيء جديد." : {
+
+    },
+    "عند التفعيل، سيتم تفعيل الأصوات حولك لتكون قابلة للوصول." : {
+
+    },
+    "عند التفعيل، سيتم تفعيل الأصوات حولك." : {
+
+    },
+    "عنوان الصوت: %@" : {
+
+    },
+    "هذا هو الصوت الذي يتم تشغيله" : {
+
+    },
+    "وصف الإبلاغ عن المشكلة" : {
+
+    },
+    "وصف الإشعارات" : {
+
+    },
+    "وصف الصوت" : {
+
+    }
+  },
+  "version" : "1.0"
+}
