@@ -1,6 +1,15 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "%@ category" : {
+
+    },
+    "%@ sound" : {
+
+    },
+    "%@ sounds category" : {
+
+    },
     "Access to sound" : {
       "extractionState" : "stale",
       "localizations" : {
@@ -23,6 +32,15 @@
         }
       }
     },
+    "Audio progress track" : {
+
+    },
+    "Category description" : {
+
+    },
+    "Completes onboarding and requests notification permission" : {
+
+    },
     "Continue" : {
       "localizations" : {
         "ar" : {
@@ -33,10 +51,40 @@
         }
       }
     },
+    "Continue to app" : {
+
+    },
+    "Current time: %@" : {
+
+    },
+    "Currently playing" : {
+
+    },
+    "Date: %@" : {
+
+    },
+    "Double tap to play full screen" : {
+
+    },
+    "Duration %@" : {
+
+    },
+    "Duration: %@" : {
+
+    },
     "Enable Notifications" : {
 
     },
     "Enable Sound" : {
+
+    },
+    "Feature: Embrace Slow Living" : {
+
+    },
+    "Feature: Noise Detection" : {
+
+    },
+    "Feature: Personalized Meditation" : {
 
     },
     "Hello, world!" : {
@@ -56,6 +104,9 @@
     "If there is a problem, you can contact us via email to solve it." : {
 
     },
+    "In the app, embracing the Slow Lifestyle encourages you to focus on the present moment, and reduce clutter." : {
+
+    },
     "Khafoot" : {
       "localizations" : {
         "ar" : {
@@ -65,6 +116,9 @@
           }
         }
       }
+    },
+    "Khafoot collects your activity to improve and personalize the app. This is not associated with your Apple ID, which may be used to check for news subscriptions." : {
+
     },
     "Khafoot collects your activity, which is not \nassociated with your Apple ID, in order to \nimprove and personalize Khafoot. Your\n Apple ID may be used to check for news \n subscriptions." : {
       "localizations" : {
@@ -89,6 +143,12 @@
         }
       }
     },
+    "Listen Now main heading" : {
+
+    },
+    "Meditation in the app includes listening to nature sounds, which helps promote relaxation and calm." : {
+
+    },
     "Nature" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -100,6 +160,9 @@
         }
       }
     },
+    "Navigate to see the complete list of %@ sounds" : {
+
+    },
     "No sound selected" : {
       "localizations" : {
         "ar" : {
@@ -110,6 +173,9 @@
         }
       }
     },
+    "Not playing" : {
+
+    },
     "Notifications" : {
       "localizations" : {
         "ar" : {
@@ -119,6 +185,28 @@
           }
         }
       }
+    },
+    "Open app settings" : {
+
+    },
+    "Pause %@" : {
+
+    },
+    "Play %@" : {
+
+    },
+    "Playing %@, %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Playing %1$@, %2$@"
+          }
+        }
+      }
+    },
+    "Privacy Information" : {
+
     },
     "Problem" : {
       "localizations" : {
@@ -205,6 +293,9 @@
         }
       }
     },
+    "Sound image for %@" : {
+
+    },
     "Stillness for inner peace" : {
       "localizations" : {
         "ar" : {
@@ -214,6 +305,12 @@
           }
         }
       }
+    },
+    "The app uses advanced technology to monitor ambient noise levels, ensuring a relaxing, distraction-free experience." : {
+
+    },
+    "Title: %@" : {
+
     },
     "Upon activation, you will receive notifications and everything new" : {
       "extractionState" : "stale",
@@ -227,6 +324,9 @@
       }
     },
     "Upon activation, you will receive notifications and everything new." : {
+
+    },
+    "View all %@ sounds" : {
 
     },
     "Water" : {
@@ -249,6 +349,9 @@
           }
         }
       }
+    },
+    "Welcome to Khafoot" : {
+
     },
     "When you allow, the sounds around you will be accessible" : {
       "extractionState" : "stale",
