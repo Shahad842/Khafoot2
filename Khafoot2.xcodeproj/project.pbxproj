@@ -6,14 +6,65 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		950E3FE92CEC75F8004AC556 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 950E3FE82CEC75F8004AC556 /* WidgetKit.framework */; };
+		950E3FEB2CEC75F8004AC556 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 950E3FEA2CEC75F8004AC556 /* SwiftUI.framework */; };
+		950E3FFC2CEC75F9004AC556 /* KhfootWidget"Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 950E3FE62CEC75F8004AC556 /* KhfootWidget"Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		950E3FFA2CEC75F9004AC556 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 771721442CE4933200E96E52 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 950E3FE52CEC75F8004AC556;
+			remoteInfo = "KhfootWidget\"Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		950E40012CEC75F9004AC556 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				950E3FFC2CEC75F9004AC556 /* KhfootWidget"Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		7717214C2CE4933200E96E52 /* Khafoot2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Khafoot2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		950E3FE62CEC75F8004AC556 /* KhfootWidget"Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "KhfootWidget\"Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		950E3FE82CEC75F8004AC556 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		950E3FEA2CEC75F8004AC556 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		950E3FFD2CEC75F9004AC556 /* Exceptions for "KhfootWidget"" folder in "KhfootWidget"Extension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 950E3FE52CEC75F8004AC556 /* KhfootWidget"Extension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		7717214E2CE4933200E96E52 /* Khafoot2 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Khafoot2;
+			sourceTree = "<group>";
+		};
+		950E3FEC2CEC75F8004AC556 /* KhfootWidget" */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				950E3FFD2CEC75F9004AC556 /* Exceptions for "KhfootWidget"" folder in "KhfootWidget"Extension" target */,
+			);
+			path = "KhfootWidget\"";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -26,6 +77,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		950E3FE32CEC75F8004AC556 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				950E3FEB2CEC75F8004AC556 /* SwiftUI.framework in Frameworks */,
+				950E3FE92CEC75F8004AC556 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -33,6 +93,8 @@
 			isa = PBXGroup;
 			children = (
 				7717214E2CE4933200E96E52 /* Khafoot2 */,
+				950E3FEC2CEC75F8004AC556 /* KhfootWidget" */,
+				950E3FE72CEC75F8004AC556 /* Frameworks */,
 				7717214D2CE4933200E96E52 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,8 +103,18 @@
 			isa = PBXGroup;
 			children = (
 				7717214C2CE4933200E96E52 /* Khafoot2.app */,
+				950E3FE62CEC75F8004AC556 /* KhfootWidget"Extension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		950E3FE72CEC75F8004AC556 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				950E3FE82CEC75F8004AC556 /* WidgetKit.framework */,
+				950E3FEA2CEC75F8004AC556 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -55,10 +127,12 @@
 				771721482CE4933200E96E52 /* Sources */,
 				771721492CE4933200E96E52 /* Frameworks */,
 				7717214A2CE4933200E96E52 /* Resources */,
+				950E40012CEC75F9004AC556 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				950E3FFB2CEC75F9004AC556 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				7717214E2CE4933200E96E52 /* Khafoot2 */,
@@ -70,6 +144,28 @@
 			productReference = 7717214C2CE4933200E96E52 /* Khafoot2.app */;
 			productType = "com.apple.product-type.application";
 		};
+		950E3FE52CEC75F8004AC556 /* KhfootWidget"Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 950E3FFE2CEC75F9004AC556 /* Build configuration list for PBXNativeTarget "KhfootWidget"Extension" */;
+			buildPhases = (
+				950E3FE22CEC75F8004AC556 /* Sources */,
+				950E3FE32CEC75F8004AC556 /* Frameworks */,
+				950E3FE42CEC75F8004AC556 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				950E3FEC2CEC75F8004AC556 /* KhfootWidget" */,
+			);
+			name = "KhfootWidget\"Extension";
+			packageProductDependencies = (
+			);
+			productName = "KhfootWidget\"Extension";
+			productReference = 950E3FE62CEC75F8004AC556 /* KhfootWidget"Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -77,11 +173,14 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1610;
+				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1610;
 				TargetAttributes = {
 					7717214B2CE4933200E96E52 = {
 						CreatedOnToolsVersion = 16.1;
+					};
+					950E3FE52CEC75F8004AC556 = {
+						CreatedOnToolsVersion = 16.0;
 					};
 				};
 			};
@@ -100,12 +199,20 @@
 			projectRoot = "";
 			targets = (
 				7717214B2CE4933200E96E52 /* Khafoot2 */,
+				950E3FE52CEC75F8004AC556 /* KhfootWidget"Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		7717214A2CE4933200E96E52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		950E3FE42CEC75F8004AC556 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +229,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		950E3FE22CEC75F8004AC556 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		950E3FFB2CEC75F9004AC556 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 950E3FE52CEC75F8004AC556 /* KhfootWidget"Extension */;
+			targetProxy = 950E3FFA2CEC75F9004AC556 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		771721582CE4933300E96E52 /* Debug */ = {
@@ -304,6 +426,62 @@
 			};
 			name = Release;
 		};
+		950E3FFF2CEC75F9004AC556 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NUFKF6S665;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "KhfootWidget\"/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "KhfootWidget\"";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "shahad842.Khafoot2.KhfootWidget-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		950E40002CEC75F9004AC556 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NUFKF6S665;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "KhfootWidget\"/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "KhfootWidget\"";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "shahad842.Khafoot2.KhfootWidget-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -321,6 +499,15 @@
 			buildConfigurations = (
 				7717215B2CE4933300E96E52 /* Debug */,
 				7717215C2CE4933300E96E52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		950E3FFE2CEC75F9004AC556 /* Build configuration list for PBXNativeTarget "KhfootWidget"Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				950E3FFF2CEC75F9004AC556 /* Debug */,
+				950E40002CEC75F9004AC556 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
