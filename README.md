@@ -38,6 +38,12 @@ Build and run the project (⌘ + R)
 
 
 # Dependencies 🧰
+* SwiftUI
+* AVKit
+* WidgetKit
+* ActivityKit
+* AVFoundation
+* Combine
 * abseil- cpp-binary 
 * app-check
 * firebase-ios-sdk
